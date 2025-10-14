@@ -9,7 +9,7 @@ cd /path/to/project/folder
 
 ## Initializing a repository
 
-### From a local project:
+#### From a local project:
 First create a GitHub project <br>
 !!! The GitHub project must be EMPTY !!! (No ReadMe/.gitignore) <br>
 Then from the terminal inside your local project:
@@ -19,7 +19,7 @@ git push
 ```
 You can replace origin with another remote name
 
-### From an existing GitHub project:
+#### From an existing GitHub project:
 First navigate to the folder where you want to place the repository, then:
 ```shell
 # Note that this will create a folder with the name YourProjectName
@@ -49,13 +49,13 @@ git push
 ```
 
 ## Branches
-### Change current
+#### Change current
 To change the current branch that you are on use:
 ```shell
 git checkout {branchname}
 ```
 **Make sure to first commit changes before using checkout**: files may else be deleted
-### Create
+#### Create
 To create a branch that branches from the current branch you are on use:
 ```shell
 git branch {your new branch name}
@@ -63,10 +63,10 @@ git branch {your new branch name}
 git checkout {your new branch name}
 ```
 
-### Merging
+#### Merging
 After a while you probably want to merge your changes back into another branch <br>
 You can either use the local GIT, or you can use GitHub
-#### Local git
+###### Local git
 ```shell
 # Switch to the branch that will receive the merge
 git checkout {your receiving branch name}
@@ -78,7 +78,7 @@ git merge --no-ff {branch name to merge}
 git branch -d {branch name to merge}
 ```
 
-#### Github
+###### Github
 On your repository page, go to "Pull Requests" and click "New pull request"<br>
 There you can specify which branch you want to merge into another (Notice the arrow, please don't merge the wrong way)<br>
 After you have created the pull request GitHub will check if there are merge conflicts<br>
@@ -86,12 +86,12 @@ If there are no merge conflicts you will receive a button to merge the two branc
 If there are merge conflicts GitHub will help you resolve them
 
 ## Staying up-to-date
-### Pull
+#### Pull
 Use the following command if your remote (for example GitHub) has changes that you don't have locally
 ```shell
 git pull
 ```
-### Push
+#### Push
 Use the following command if your remote (for example GitHub) doesn't have changes that you have locally
 ```shell
 git push
