@@ -17,7 +17,7 @@ Then from the terminal inside your local project:
 git remote add origin https://github.com/{YourUsername}/{YourProjectName}.git
 git push
 ```
-You can replace origin with another remote name
+You can replace origin with another remote name (but then need to replace origin in all the other commands configuring remotes too)
 
 #### From an existing GitHub project:
 First navigate to the folder where you want to place the repository, then:
@@ -61,6 +61,8 @@ To create a branch that branches from the current branch you are on use:
 git branch {your new branch name}
 # You probably want to start using the branch as well:
 git checkout {your new branch name}
+# Use this command to publish the branch to your remotes (for example to GitHub):
+git push -u origin {your new branch name}
 ```
 #### Merging branches
 After a while you probably want to merge your changes back into another branch <br>
