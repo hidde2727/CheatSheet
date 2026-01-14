@@ -123,6 +123,9 @@ git config --global --unset credential.helper
 git config --system credential.helper
 # Then run this one:
 sudo git config --system --unset credential.helper
+
+# Then to not have to type your username and password every time:
+git config credential.helper store
 ```
 Now when you run for example ```git push``` the terminal will prompt you (in VsCode on the top of your screen) for your credentials.
 For the password you must create a personal access token: <br>
