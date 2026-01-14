@@ -106,7 +106,7 @@ To access private repositories/push to repositories you need to authenticate you
 If you are using vscode it will do it for you, but sometimes this doesn't work.
 To use git in vscode, without letting vscode manage your git credentials, first disable vscodes management:
 Settings > 'Search git auth' > disable both 'Github: git authentication' and 'Git: Terminal Authentication'
-![Settings page in VsCode](/cheatsheet/assets/git-auth-vscode.png)
+![Settings page in VsCode](/cheatsheet/assets/static/git-auth-vscode.png)
 Now clean your computer by running:
 ```
 # First check if the following command outputs something with vscode:
@@ -127,5 +127,5 @@ sudo git config --system --unset credential.helper
 Now when you run for example ```git push``` the terminal will prompt you (in VsCode on the top of your screen) for your credentials.
 For the password you must create a personal access token: <br>
 [github.com/settings/personal-access-tokens](https://github.com/settings/personal-access-tokens)
-![PAT screen in GitHub](/cheatsheet/assets/git-auth-PAT.png)
+![PAT screen in GitHub](/cheatsheet/assets/static/git-auth-PAT.png)
 Then use that PAT as your password when prompted by git
